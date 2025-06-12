@@ -2,6 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mensagem para meu amor</title>
     <style>
       body {
@@ -27,6 +28,36 @@
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(255, 0, 102, 0.5);
       }
+      
+      @media (max-width: 480px) {
+      body {
+        padding: 10px;
+        height: auto;
+      }
+
+      .mensagem {
+        padding: 20px;
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    }
+
+    /* Ajuste para telas médias */
+    @media (min-width: 481px) and (max-width: 768px) {
+      .mensagem {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+
+    /* Ajuste para telas maiores */
+    @media (min-width: 769px) {
+      .mensagem {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+    }
     </style>
   </head>
   <body>
