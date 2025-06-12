@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mensagem para meu amor</title>
+    <style>
+      body {
+        background-image: url("https://lh3.googleusercontent.com/pw/AP1GczN4Y4FqMIR_XE0K92OvFxFbPCNBf-7BLVY-h1-7P_rvzVZZIzJUpyDNA3P04-YpdoVMh5RkSOWA61rN9qhg_TcfaQqvq-56eKvFwQuBOcn6R4G8io90QWc7svV6ojmXGyUAMO4dS_ZDvqyOtNEo_Cx8qA=w718-h957-s-no-gm?authuser=0"); /* <-- SUBSTITUA AQUI */
+        background-size: contain;
+        background-position: center;
+        background-repeat: repeat;
+        /* background-color: #1e1e1e; */
+        color: #f2f2f2;
+        font-family: "Courier New", monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+        text-align: left;
+      }
+      .mensagem {
+        max-width: 600px;
+        white-space: pre-wrap;
+        background-color: #2c2c2c;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 0, 102, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mensagem" id="msg"></div>
+
+    <script>
+      function amar(voce) {
+        return "para sempre ❤️";
+      }
+
+      const hoje = new Date();
+      const dia = hoje.getDate();
+      const mes = hoje.getMonth(); // 0 = janeiro, 5 = junho
+
+      if (dia === 12 && mes === 5) {
+        const texto =
+          `Olá, meu amor.\nHoje é um dia muito especial, nosso primeiro Dia dos Namorados e gostaria de lhe dizer algumas coisas.\n\n` +
+          `Desde que você entrou na minha vida, meu coração roda em loop infinito por você.\n` +
+          `Você é o breakpoint que pausou minha solidão, interrompendo todos os erros silenciosos que eu nem sabia que estavam no meu sistema.\n` +
+          `Nosso amor não precisa de refatoração. Está em produção, performando com estabilidade e escalando a cada dia.\n\n` +
+          `E se eu tivesse que escolher fazer apenas uma função, seria:\n\n` +
+          `function amar(você) {\n    return "${amar("você")}";\n}\n\n` +
+          `Feliz Dia dos Namorados! 💖`;
+
+        document.getElementById("msg").textContent = texto;
+      } else {
+        document.getElementById("msg").textContent =
+          "Volte aqui em 12/06... 😉";
+      }
+    </script>
+  </body>
+</html>
